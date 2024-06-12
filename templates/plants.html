@@ -25,9 +25,9 @@
             </a>
           <div class="col-md-9">
             <div class="card-body">
-              <h5 class="card-title">과: {{ plant.family_kor_nm }}</h5>
-              <h5 class="card-title">속: {{ plant.genus_kor_nm }}</h5>
-              <p class="card-title">이름: {{ plant.plant_nm }}</p>
+              <h5 class="card-title">이름(일본): {{ plant.family_kor_nm }}</h5>
+              <h5 class="card-title">이름(한국): {{ plant.genus_kor_nm }}</h5>
+              <p class="card-title">직업: {{ plant.plant_nm }}</p>
               <button class="btn btn-primary" onclick="window.location.href='/edit/{{ plant.id }}'">Edit</button>
               <button class="btn btn-danger" onclick="confirmDelete('{{ plant.id }}', '{{ plant.plant_nm }}')">Delete</button>
             </div>
